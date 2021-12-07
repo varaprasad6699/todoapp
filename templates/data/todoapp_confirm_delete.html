@@ -1,0 +1,10 @@
+
+    <form method="post">{% csrf_token %}
+     
+ 
+    <p>Are you sure you want to delete "{{ object.desc }}"?</p>
+ 
+ 
+    <input type="submit" value="Confirm">
+    <a href="/todo/seedata">cancle</a>
+</form>

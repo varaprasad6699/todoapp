@@ -1,0 +1,20 @@
+{% load static%}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'adddata.css' %}?{% now 'U' %}">
+    </head>
+    <body>
+        <nav>
+            <a class="home" href="/"> Home</a>
+            <a class="seelist" href="/todo/userdata"> See List</a>
+        </nav>
+        <h1 class="heading">ADD TASK</h1>
+       
+
+        <form class="form_desc" method="POST">
+            <label for="desc">Add Task</label> {{form.desc}}
+            <input class="submit-button" type="submit" value="add">
+            {% csrf_token %}
+        </form>
+    </body>
+</html>

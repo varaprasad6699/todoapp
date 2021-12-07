@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'seedata.css' %}?{% now 'U' %}">
+        
+    </head>
+
+<body>
+    <nav>
+        <a class="home" href="/"> Home</a>
+        <a class="adddata" href="/todo/adddata"> Add List</a>
+    </nav>
+        <h1 class="heading">To Do List</h1>
+        
+    
+  {%if userdata|length > 0 %}
+    
+        {% for i in userdata%}
+            
+        <div class="main">
+            <div class="inside1">
+                <dl>
+                    <dt class="text text1"> {{i.desc}}</dt>
+                     <dd class="text text2">{{i.datetime}}</dd>    
+                 </dl>
+            </div>
+            <div class="inside2">
+                <span class="spb"><a  class="alink" href="/todo/updatedata/{{i.id}}"><button class="btn edit">UPDATE</button></a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="spb"><a class="alink" href="/todo/deletedata/{{i.id}}"><button class="btn delete">DELETE</button></a></span>
+            </div>
+        </div>
+        <br><br><br>
+         
+        {% endfor %}
+        
+        {% else %}
+          <h1>please add some todo lists</h1>
+    {% endif %}
+   
+</body>
+    
+    
+</html>

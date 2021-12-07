@@ -1,0 +1,38 @@
+{% load static%}
+<html>
+    <head>
+        <title>
+            TO DO APP
+        </title>
+        <link rel="stylesheet" href="{% static 'home.css' %}?{% now 'U' %}">
+        
+
+    </head>
+    <body>
+        <h1><span>TO DO APP</span></h1>
+        
+        {% if user.is_authenticated %}
+        <nav>
+            <h2>Hello,{{user.username}}</h2>
+            <a class="logout" href="/logout"> log out</a>
+        </nav>
+    {% else %}
+    <nav>
+        <a class="register" href="/register">register</a>
+        <a class="login" href="/login">log in</a>
+    </nav>
+    {% endif %}
+        
+         <div class="wrapper">
+                <a class="addtask" href="/todo/adddata">Add Task To Do</a>
+          </div>
+
+          <div class="wrapper1">
+                <a class="seedata" href="/todo/userdata">See Your To Do List</a>
+          </div>
+
+          
+    </body>
+</html>
+
+

@@ -1,0 +1,134 @@
+/* for background*/
+body{
+    background: linear-gradient(-45deg, #c0bab9, #a77c8d, #83a4b1, #a3b9b4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*  end for background*/
+/*for nav buttons*/
+nav{
+    display: flex;
+    float: right;
+  }
+  
+.home,.seelist{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 14px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: 1px solid white;
+  }
+  .home:hover,.seelist:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+/*end of nav buttons*/
+/* for heading*/
+.heading{
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: all .25s;
+    animation: move 5s  infinite;
+}
+
+@keyframes move {
+    0%   { letter-spacing: 2px;}
+    25%  { letter-spacing: 10px;}
+    50%  { letter-spacing: 2px;}
+    75%  { letter-spacing: 10px;}
+    100% { letter-spacing: 2px;}
+  }
+
+/* end for heading*/
+/* for links*/
+.links-inside{
+    
+    margin: -10px 40% -10px 50%;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    letter-spacing: 2px;
+    
+ 
+}
+.links-inside:hover{
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(19, 16, 16);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+/* end for links*/
+.l1{
+    transform: translate(250%,-30px);
+}
+
+.l2{
+    transform: translate(360%,-57px);
+}
+.desc{
+  padding: 10px 150px;
+  background: none;
+  border-color: black;
+  border-radius: 10px;
+  
+  font-style: oblique;
+}
+
+.form_desc{
+    margin-top: 10%;
+    text-align: center;
+}
+label{
+    font-size: x-large;
+    margin-right: 10px;
+}
+.submit-button{
+    padding: 10px 25px ;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(70, 216, 70, 0.808);
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: rgba(0, 255, 0, 0.808);
+    color: white;
+}

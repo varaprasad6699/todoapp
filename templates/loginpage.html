@@ -1,0 +1,34 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="{% static 'registercss.css' %}?{% now 'U' %}">
+</head>
+<body>
+    <form class="registration" method="POST">
+        {% csrf_token %}
+        <h1>👋 Log In !</h1>
+      
+        <label class="pure-material-textfield-outlined" >
+          <span>👨‍💻</span><input class="inp" type="text" name="username" placeholder="user name">
+            
+        </label>
+        <label class="pure-material-textfield-outlined">
+            <span class="span1">👁</span><input class="inp" type="password" name="password" placeholder="password">    
+         </label>
+        <label class="pure-material-checkbox">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="span2">Register an account <a href="/register"> Register</a></span>
+        </label>
+        
+        <button class="pure-material-button-contained" type="submit">Sign In </button>
+        <label class="messages" >
+            {% for message in messages %}
+            <h3>{{message}}</h3>
+            {% endfor %}
+        </label>
+    </form>
+    
+        
+</body>
+</html>

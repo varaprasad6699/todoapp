@@ -1,0 +1,126 @@
+
+
+body{
+    background: #ebf4e9;
+}
+
+/* for heading*/
+.heading{
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid rgb(151, 96, 96);
+    border-bottom: 2px solid rgb(214, 108, 108);
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: all .25s;
+    animation: move 5s  infinite;
+}
+
+@keyframes move {
+    0%   { letter-spacing: 2px;}
+    25%  { letter-spacing: 10px;}
+    50%  { letter-spacing: 2px;}
+    75%  { letter-spacing: 10px;}
+    100% { letter-spacing: 2px;}
+  }
+
+/* end heading*/
+/*for nav*/
+nav{
+    display: flex;
+    float: right;
+  }
+  
+.home,.adddata{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    margin: 14px;
+    border-radius: 5px;
+    background-color: rgb(141 181 200);
+    border: 1px solid white;
+  }
+  .home:hover,.adddata:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+/*for nav*/
+.main{
+    display: inline-flex;
+    width: 50%;
+    height: 10%;
+    position: relative;
+    justify-content: space-between;
+    top: 10%;
+    left: 25%;
+    right: 0%;
+    border-radius: 40px;
+    background-color: #040505;
+    box-shadow: rgb(30, 30, 145) 0px 7px 29px 0px;
+}
+.inside1{
+    margin: 10%;
+    transform: translate(-20px,-80px);
+    padding-right:- 100px;
+   
+}
+.text{
+    color: #dae0e0; 
+}
+.text1{
+    size: 18%;
+    font-size: 108%;
+}
+.text2{
+    color: darkcyan;
+    padding: 5px 0px 0px 10%;
+    font-size: 69%;
+}
+.inside2{
+    margin: 10%;
+    
+    transform: translate(-40px,-90px);
+    display: flex;
+    
+   
+    
+}
+.spb{
+    margin: 20%;
+}
+.btn{
+   margin-top: -20px;
+    border-radius: 20%;
+    border: 2px solid #171a1b;
+    background: none;
+    color: #040505; 
+    cursor: pointer;
+    transform: translate(-40px,15px);
+}
+.btn:hover{
+   background-color: #040505;
+   color: white;
+}
+.edit{
+    padding: 30%;
+    background-color: #38a53e; 
+}
+.delete{
+    padding: 30%;
+    background-color: #e22141; 
+}
+.alink{
+    color: #040505; 
+    text-decoration: none;
+}
+.alink:hover{
+    color: white;
+}

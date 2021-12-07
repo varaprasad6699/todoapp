@@ -1,0 +1,96 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #4788a1, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    text-align: center;
+}
+/* for animated titile*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+
+span{
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:70px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #ff1f8f,
+						20px 20px #000000;
+}
+
+/*for buttons*/
+nav{
+  display: flex;
+  float: right;
+}
+
+.register,.login,.logout{
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin: 14px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: 1px solid white;
+}
+.logout:hover, .register:hover,.login:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  
+.wrapper1{
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .addtask,.seedata{
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: all .25s;
+  }
+  
+  .addtask:hover,.seedata:hover{
+    letter-spacing: 10px;
+  }
+  
+  /* for box 1*/
+
